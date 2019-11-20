@@ -1,0 +1,7 @@
+.env*
+
+app/*
+!app/Gemfile
+!app/config.yml
+
+data

@@ -1,0 +1,12 @@
+---
+version: "2.1"
+services:
+  gemstash:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: ${GEMSTASH_RESTART_MODE}
+    ports:
+      - ${GEMSTASH_PORT}:9292
+    volumes:
+      - ${GEMSTASH_DATA_PATH}:/home/gemstash/.gemstash

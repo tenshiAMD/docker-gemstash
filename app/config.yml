@@ -1,0 +1,4 @@
+---
+:db_adapter: sqlite3
+:db_url: sqlite://gemstash.db
+:protected_fetch: true
